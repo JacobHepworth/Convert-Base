@@ -29,8 +29,3 @@ def convert_base(x, original_base, new_base=10):
         return ten_to_base(int(str(x)), new_base)
     else:
         return x
-for i in range(1,1000):
-    print(convert_base(i,10,35),
-    convert_base(i,10,10),
-    convert_base(convert_base(i,10,35),35,10),
-    convert_base(convert_base(i,10,16),16,2))
