@@ -3,6 +3,7 @@ Python script to convert any base to any base. the function ten_to_base() can be
 
 ###To use do as follows:
 >convert_base(x,original_base,new_base)
+
 >ten_to_base(x,new_base,extend=['!','@','#'])
 
 Note, the list under the extend argument is completely up to the user to define.
