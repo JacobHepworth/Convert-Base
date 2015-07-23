@@ -16,7 +16,7 @@ def ten_to_base(x, new_base,extend=[]):
     current = x
     while current != 0:
         remain = current % new_base
-        if new_base > 36 != extend:
+        if new_base > 36 and not extend:
             raise ValueError("Can't exceed base 36 without defining new bases")
         elif remain > 9:
             remain_str = base_chart[remain]
