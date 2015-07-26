@@ -20,7 +20,6 @@ def ten_to_base(x, new_base,extend=[]):
     else:
         while current != 0:
             remain = current % new_base
-            print(remain)
             if new_base > 36 and not extend:
                 raise ValueError("Can't exceed base 36 without defining new bases")
             elif remain > 9:
@@ -42,5 +41,3 @@ def convert_base(x, original_base, new_base=10):
         return ten_to_base(int(str(x)), new_base)
     else:
         return x
-
-print(ten_to_base(0,16))
